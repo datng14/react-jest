@@ -3,6 +3,7 @@ import React from "react";
 import App from "components/App";
 import CommentBox from "components/CommentBox";
 import CommentList from "components/CommentList";
+import Root from "Root";
 
 let wrapped;
 
@@ -20,6 +21,5 @@ it("shows a comment box", () => {
 });
 
 it("shows a comment list", () => {
-  const wrapped = shallow(<App />);
   expect(wrapped.find(CommentList).length).toEqual(1);
 });
