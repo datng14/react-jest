@@ -1,5 +1,5 @@
-const { SAVE_COMMENT } = require("actions/types");
-const { saveComment } = require("actions");
+import { saveComment } from "actions/index";
+import { SAVE_COMMENT } from "actions/types";
 
 describe("saveComment", () => {
   it("has the correct type", () => {
